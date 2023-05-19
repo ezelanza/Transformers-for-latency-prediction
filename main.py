@@ -16,8 +16,8 @@ args = dotdict()
 args.model = 'informer' # model of experiment, options: [informer, informerstack, informerlight(TBD)]
 
 args.data = 'ETTm1' # data
-args.root_path = './Informer/ETDataset/ETT-small/' # root path of data file
-args.data_path = 'ETTm1.csv' # data file
+args.root_path = './Dataset/Train/' # root path of data file
+args.data_path = 'Train_etth_norm.csv' # data file
 args.features = 'MS' # forecasting task, options:[M, S, MS]; M:multivariate predict multivariate, S:univariate predict univariate, MS:multivariate predict univariate
 args.target = 'p95 deploy/frontend' # target feature in S or MS task
 args.freq = 't' # freq for time features encoding, options:[s:secondly, t:minutely, h:hourly, d:daily, b:business days, w:weekly, m:monthly], you can also use more detailed freq like 15min or 3h
